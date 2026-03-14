@@ -1,5 +1,3 @@
-//controlador para el ciudadano : encargado de escuchar y responder las peticiones
-
 import { predioModel } from "../models/predio.model.js";
 
 export const getPredios = async (req, res) => {
@@ -15,7 +13,7 @@ export const getPredios = async (req, res) => {
   }
 };
 
-//buscar ciudadano por el parametro id
+//buscar predio por el parametro id
 export const getPrediosById = async (req, res) => {
   //codigo protegido con try..catch
 
@@ -74,7 +72,6 @@ export const updatePredios = async (req, res) => {
 
   // se puede utilizar data o req.body, pero debe tener cuidado con el nombre de las tablas.
   const data = {
-    idPredio: req.body.idPredio,
     descripcionPredio: req.body.descripcionPredio,
     area: req.body.area,
     direccion: req.body.direccion,

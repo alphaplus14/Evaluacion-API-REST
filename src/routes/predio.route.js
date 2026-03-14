@@ -17,12 +17,12 @@ const router = Router();
 
 router.get("/predio/listartodos", predioCtr.getPredios);
 
-router.get("/predio/listarporid/:id", predioCtr.getPrediosById);
+router.get("/predio/listarporid/:idPredio", predioCtr.getPrediosById);
 
 router.post("/predio/crear", predioCtr.createPredios);
 
-router.delete("/predio/borrarporid/:id", predioCtr.deletePredios);
+router.delete("/predio/borrarporid/:idPredio", predioCtr.deletePredios);
 
-router.put("/predio/editar/:id", predioCtr.updatePredios);
+router.put("/predio/editar/:idPredio", predioCtr.updatePredios);
 
 export default router;

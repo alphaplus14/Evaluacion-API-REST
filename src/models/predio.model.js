@@ -1,7 +1,4 @@
-// capa modelo para el modulo de ciudadanos
-
 //importamos la conexion
-
 import { db } from "./bdatos.js";
 
 //activar el manejo de promesas (asyncronicas)
@@ -10,7 +7,7 @@ import { db } from "./bdatos.js";
 
 //creamos el modulo : usando el concepto de orientado a objetos
 
-// la clase modelo correspondiente a ciudadanos
+// la clase modelo correspondiente a predios
 
 export const predioModel = {
   //listar todos: aplicando funciones asincronicas para aprovechar las promesas (los hilos de ejecucion)
